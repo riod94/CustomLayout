@@ -20,16 +20,16 @@
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Me.WindowState = FormWindowState.Minimized
     End Sub
-
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button3.Click
-        Me.Close()
-    End Sub
-
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button2.Click
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         If Me.WindowState = FormWindowState.Normal Then
             Me.WindowState = FormWindowState.Maximized
         Else
             Me.WindowState = FormWindowState.Normal
         End If
     End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        Me.Close()
+    End Sub
+
 End Class
